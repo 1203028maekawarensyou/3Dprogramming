@@ -1,7 +1,5 @@
 ﻿#include "main.h"
 
-
-
 // ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// /////
 // エントリーポイント
 // アプリケーションはこの関数から進行する
@@ -159,7 +157,6 @@ void Application::DrawSprite()
 	// 2Dの描画はこの間で行う
 	KdShaderManager::Instance().m_spriteShader.Begin();
 	{
-
 	}
 	KdShaderManager::Instance().m_spriteShader.End();
 }
@@ -224,6 +221,8 @@ bool Application::Init(int w, int h)
 	//===================================================================
 	KdAudioManager::Instance().Init();
 
+	test = 5;
+
 	return true;
 }
 
@@ -252,7 +251,6 @@ void Application::Execute()
 	// ループ
 	while (1)
 	{
-
 		// 処理開始時間Get
 		m_fpsController.UpdateStartTime();
 
